@@ -25,7 +25,7 @@ Use Python with OpenCV, NumPy and TensorFlow/Keras compatible with the original
 checkpoint. Supply the local Caffe detector directory and classifier `.h5` file.
 
 ```sh
-python demo.py --image /path/to/image.jpg --face-dir /path/to/face_detector --model /path/to/mask_detector.h5
+python predict_image.py --image /path/to/image.jpg --face-dir /path/to/face_detector --model /path/to/mask_detector.h5
 ```
 
 ## Original project source
