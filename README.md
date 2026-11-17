@@ -71,3 +71,13 @@ The November 2026 work addressed inconsistencies in the recovered implementation
 The repository includes recovered source code, benchmark scripts, per-image predictions, dependency versions and model fingerprints.
 
 See [references and acknowledgements](ATTRIBUTION.md).
+
+## Validation status
+
+The image-level benchmark was reproduced locally. Check the published
+prediction records against the aggregate CSV without ML dependencies:
+
+    python3 check_results.py
+
+See [validation and implementation status](VALIDATION.md) for benchmark
+interpretation, model availability and the status of archived modules.

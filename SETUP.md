@@ -17,4 +17,15 @@ Run one image prediction.
 
 The default detector threshold is 0.30 and crop padding is 30% per side. The output describes the highest-scoring valid face box.
 
-The model files are currently supplied locally. Their hashes, provenance and acquisition instructions remain to be documented.
+The model files are currently supplied locally. File sizes and SHA-256 hashes are recorded in results/model-manifest.json. Provenance and an authorised acquisition route remain to be documented.
+
+## Supported scope
+
+These installation instructions support predict_image.py and
+benchmark_images.py. The original/ scripts are historical and require
+additional dependencies and configuration.
+
+requirements-macos-py39.lock.txt records the successful macOS Python 3.9
+environment; it is not a cross-platform lockfile.
+
+See [validation and implementation status](VALIDATION.md).
