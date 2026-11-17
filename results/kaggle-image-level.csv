@@ -1,0 +1,7 @@
+setting,folder_label,images,predicted_mask,predicted_no_mask,no_prediction,unreadable
+original_full_050_pad0,with_mask,1875,1406,294,175,0
+original_full_050_pad0,without_mask,1873,104,1768,1,0
+full_030_pad30,with_mask,1875,1573,212,90,0
+full_030_pad30,without_mask,1873,29,1843,1,0
+tiled_030_pad30,with_mask,1875,1525,304,46,0
+tiled_030_pad30,without_mask,1873,33,1840,0,0
