@@ -35,3 +35,26 @@ The project was built by Advith Ashok. See the [original source archive](origina
 ## Installation
 
 See [local setup instructions](SETUP.md) and [dependency versions](requirements.txt).
+
+## Reproduce the image benchmark
+
+On 17 November 2026, a local run reproduced every aggregate count in
+results/kaggle-image-level.csv across all three configurations.
+
+The run processed 3,833 images, removed 85 exact duplicate copies and
+evaluated 3,748 images. No exact file matches were found against the
+supplied recovered dataset. The original training data remains unverified.
+
+- [Per-image predictions and SHA-256 hashes](results/kaggle-per-image.csv)
+- [Recorded macOS Python 3.9 environment](requirements-macos-py39.lock.txt)
+- [Benchmark implementation](benchmark_images.py)
+
+After following SETUP.md, run:
+
+```sh
+.venv/bin/python benchmark_images.py \
+  --images /path/to/images \
+  --exclude-images /path/to/MaskedFace \
+  --face-dir /path/to/face_detector \
+  --model models/mask_detector.h5 \
+  --output-dir outputs
