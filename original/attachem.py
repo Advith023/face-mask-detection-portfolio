@@ -11,8 +11,8 @@ from email.utils import COMMASPACE, formatdate
 import email.encoders as Encoders
 import os
 
-USERNAME = "capulusadvith@gmail.com"
-PASSWORD = "Advithceo@23"
+USERNAME = os.environ.get("MASK_ALERT_EMAIL", "")
+PASSWORD = os.environ.get("MASK_ALERT_PASSWORD", "")
 
 def sendMail(to, subject, text, files=[]):
     assert type(to)==list
