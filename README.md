@@ -31,3 +31,7 @@ python predict_image.py --image /path/to/image.jpg --face-dir /path/to/face_dete
 ## Original project source
 
 The project was built by Advith Ashok. See the [original source archive](original/README.md).
+
+## Installation
+
+See [local setup instructions](SETUP.md) and [dependency versions](requirements.txt).
