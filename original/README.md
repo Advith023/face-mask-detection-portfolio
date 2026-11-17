@@ -8,4 +8,6 @@ These files are archived as recovered. The historical scripts require their orig
 
 The November 2026 portfolio reconstruction and benchmark experiments are documented in the main README.
 
-The repository MIT licence applies to demo.py only. Attribution for reused components will be documented from the original project references.
+See [references and acknowledgements](../ATTRIBUTION.md) for the training and video-inference reference.
+
+The MIT licence applies to predict_image.py only.

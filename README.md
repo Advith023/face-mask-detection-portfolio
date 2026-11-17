@@ -59,3 +59,15 @@ After following SETUP.md, run:
   --model models/mask_detector.h5 \
   --output-dir outputs
 ```
+
+## Development and contribution
+
+**Project developer and maintainer: Advith Ashok (@Advith023).**
+
+Developed and integrated the face-mask screening application, including image and video inference, a desktop interface and serial hardware communication.
+
+The November 2026 work addressed inconsistencies in the recovered implementation and verified three inference configurations. The best configuration achieved 91.14% correct image-level predictions across 3,748 deduplicated images, compared with an 84.69% baseline, without retraining.
+
+The repository includes recovered source code, benchmark scripts, per-image predictions, dependency versions and model fingerprints.
+
+See [references and acknowledgements](ATTRIBUTION.md).
