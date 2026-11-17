@@ -2,7 +2,7 @@
 
 Project author: Advith Ashok (@Advith023).
 
-Recovered undergraduate project scripts covering classifier training, image and video inference, a desktop interface and serial hardware integration.
+Recovered project scripts covering classifier training, image and video inference, a desktop interface and serial hardware integration.
 
 These files are archived as recovered. The historical scripts require their original dependencies and hardware configuration.
 

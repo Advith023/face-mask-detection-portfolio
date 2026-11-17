@@ -1,6 +1,6 @@
 # Face Mask Detection
 
-An undergraduate computer-vision prototype built with an OpenCV face detector
+A face-mask screening project built with an OpenCV face detector
 and a Keras mask classifier. The follow-up benchmarks reused the original
 checkpoint and varied the detection threshold, crop padding and image tiling.
 
@@ -27,3 +27,7 @@ checkpoint. Supply the local Caffe detector directory and classifier `.h5` file.
 ```sh
 python demo.py --image /path/to/image.jpg --face-dir /path/to/face_detector --model /path/to/mask_detector.h5
 ```
+
+## Original project source
+
+The project was built by Advith Ashok. See the [original source archive](original/README.md).
