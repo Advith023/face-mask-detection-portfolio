@@ -4,20 +4,22 @@ A face-mask screening project built with an OpenCV face detector
 and a Keras mask classifier. The follow-up benchmarks reused the original
 checkpoint and varied the detection threshold, crop padding and image tiling.
 
-| Configuration | Kaggle image-level correct | Recovered per-face correct |
-|---|---:|---:|
-| Original full image, 0.50 threshold, no padding | 3,174/3,748 (84.7%) | 111/476 (23.3%) |
-| Full image, 0.30 threshold, 30% padding | 3,416/3,748 (91.1%) | 152/476 (31.9%) |
-| Full image plus four tiles, 0.30 threshold, 30% padding | 3,365/3,748 (89.8%) | 236/476 (49.6%) |
+| Configuration | Reproduced image-level correct |
+|---|---:|
+| Original full image, 0.50 threshold, no padding | 3,174/3,748 (84.69%) |
+| Full image, 0.30 threshold, 30% padding | 3,416/3,748 (91.14%) |
+| Full image plus four tiles, 0.30 threshold, 30% padding | 3,365/3,748 (89.78%) |
 
 The Kaggle benchmark scored one prediction per image against its folder label
 and counted no prediction as a miss. It excluded 85 exact duplicate copies.
-The recovered face-box validation split was used to shortlist configurations.
+Earlier per-face experiments informed configuration selection. Their results
+are retained separately, with an unresolved evaluation-subset discrepancy
+documented in [validation status](VALIDATION.md).
 The original checkpoint's training data is unverified.
 
 - [Kaggle dataset](https://www.kaggle.com/datasets/belsonraja/face-mask-dataset-with-and-without-mask)
 - [Kaggle results](results/kaggle-image-level.csv)
-- [Recovered validation results](results/recovered-validation.csv)
+- [Earlier per-face results — not yet reproduced](results/recovered-validation.csv)
 
 ## Run locally
 

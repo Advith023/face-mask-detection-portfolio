@@ -33,13 +33,24 @@ padding; the image benchmark does not isolate their individual effects.
 
 ## Recovered per-face evaluation
 
-results/recovered-validation.csv contains historical per-face evaluation
-results. The evaluation script, annotation manifest, split definition
-and matching protocol are not currently published. This evaluation has
-not been reproduced through the current repository.
+results/recovered-validation.csv preserves an earlier evaluation export.
+Its original evaluator and selection manifest have not been recovered.
 
-Image-level and per-face results use different scoring units and datasets
-and should not be compared as interchangeable accuracy measurements.
+A subsequent inspection of the local validation folder found 85 readable
+image/annotation pairs, 85 unique image SHA-256 hashes and 531 annotated
+faces: 436 with_mask, 80 without_mask and 15 mask_weared_incorrect.
+No byte-identical image duplicates or invalid bounding boxes were found.
+
+The earlier export uses 490 total faces and 476 binary-labelled faces.
+Its counts imply 397 with_mask, 79 without_mask and 14 incorrectly worn
+masks. Exact-image deduplication does not explain the difference.
+
+The earlier CSV is preserved unchanged as an evaluation record. Its
+relationship to the complete current validation folder is unresolved;
+it is not presented as a reproduced result in the headline comparison.
+
+Image-level and per-face evaluations use different scoring units and
+datasets. Their percentages are not interchangeable.
 
 ## Archived modules
 
