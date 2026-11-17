@@ -58,3 +58,4 @@ After following SETUP.md, run:
   --face-dir /path/to/face_detector \
   --model models/mask_detector.h5 \
   --output-dir outputs
+```

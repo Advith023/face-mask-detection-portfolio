@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "role": "mask_classifier",
+      "filename": "mask_detector.h5",
+      "bytes": 11483536,
+      "sha256": "a62288c0832df0fad0e97b881b5268d3deb40ec372611b7d81c913715799af00"
+    },
+    {
+      "role": "face_detector_configuration",
+      "filename": "deploy.prototxt",
+      "bytes": 28092,
+      "sha256": "f62621cac923d6f37bd669298c428bb7ee72233b5f8c3389bb893e35ebbcf795"
+    },
+    {
+      "role": "face_detector_weights",
+      "filename": "res10_300x300_ssd_iter_140000.caffemodel",
+      "bytes": 10666211,
+      "sha256": "2a56a11a57a4a295956b0660b4a3d76bbdca2206c4961cea8efe7d95c7cb2f2d"
+    }
+  ]
+}
